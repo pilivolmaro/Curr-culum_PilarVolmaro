@@ -46,6 +46,13 @@ header {
     text-transform: uppercase;
     padding-bottom: 1em;
 }
+.header-list_2 li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+
 
 
 .header-img {
@@ -54,6 +61,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 
 .header-img img {
     height: 70%;
@@ -64,7 +72,13 @@ header {
     margin-right: auto;
     left: 0;
     right: 0;
+    transition-duration: 1s;
 }
+
+.header-img img:hover{
+    rotate: 360deg;
+}
+
 
 /*main*/
 
@@ -91,7 +105,11 @@ header {
     background-color: #2E2828;
     color: white;
     margin: 1.5em 5%;
+    transition-duration: 1s;
 }
+    .idiomas-title:hover{
+        scale: 1.1; 
+    }
 
 .idiomas-title h3 {
     padding-top: 10px;
@@ -116,7 +134,11 @@ header {
     background-color: #2E2828;
     color: white;
     margin: 2em 5%;
+    transition-duration: 1s;
 }
+    .cualidades-title:hover{
+        scale: 1.1; 
+    }
 
 .cualidades-title h3 {
     padding-top: 10px;
@@ -145,7 +167,11 @@ header {
     background-color: #2E2828;
     color: white;
     margin: 2em 5%;
+    transition-duration: 1s;
 }
+    .premios-title:hover{
+        scale: 1.1; 
+    }
 
 .premios-title h3 {
     padding-top: 10px;
@@ -175,7 +201,15 @@ header {
     color: white;
     margin-bottom: 3em;
     margin-top: 3em;
+    transition-duration: 1s;
 }
+
+
+.info-title:hover{
+    scale: 1.1;
+}
+
+
 
 .info-title h3 {
     padding-top: 15px;
@@ -201,7 +235,13 @@ header {
     text-align: justify;
     font-size: 1.3em;
     line-height: 1.5em;
+    transition: 1s;
 }
+    .caja-experiencia h4:hover{
+        translate: 20px;
+        font-size: 1.5em;
+    }
+
 
 .caja-experiencia {
     margin-bottom: 20px;
@@ -227,8 +267,13 @@ footer {
     text-decoration: none;
     color: white;
     padding: 20px;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
 }
 
+.footer-item :hover{
+    text-decoration: underline;
+}
 
 .footer-item img {
     width: 30px;
@@ -238,6 +283,7 @@ footer {
 .footer-item p {
     align-self: center;
 }
+
 
 
 
