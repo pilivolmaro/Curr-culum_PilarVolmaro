@@ -45,11 +45,16 @@ header {
     list-style: none;
     text-transform: uppercase;
     padding-bottom: 1em;
+    transform-origin : 0 100% 0;
+    transition: .5s;
 }
 .header-list_2 li a{
     text-transform: uppercase;
     text-decoration: none;
     color: white;
+}
+.header-list_2 li:hover{
+    scale: 1.1;
 }
 
 
@@ -184,6 +189,10 @@ header {
 .texto-premio {
     text-align: center;
     line-height: 2em;
+    transition-duration: 1s;
+}
+.texto-premio:hover{
+    transform: scale(1.2);
 }
 
 
@@ -275,9 +284,17 @@ footer {
     text-decoration: underline;
 }
 
+
 .footer-item img {
     width: 30px;
     margin-right: 10px;
+
+}
+.footer-cont .footer-item img{
+    transition-duration: 1s;
+}
+.footer-cont .footer-item img:hover{
+    rotate: 360deg;
 }
 
 .footer-item p {
@@ -291,7 +308,7 @@ footer {
 
 
 /*PANTALLA CELULAR*/
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 600px) {
     header {
         display: block;
         height: 370px;
@@ -333,14 +350,14 @@ footer {
     /*header img*/
     .header-img {
         display: block;
-        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .header-img img {
-        height: 30%;
-        padding: 30px;
+        height: 40%;
+        padding: 0px;
         position: absolute;
-        top: 270px;
         margin-left: auto;
         margin-right: auto;
         left: 0;
@@ -424,7 +441,7 @@ footer {
 
 
 /*PANTALLA TABLET*/
-@media screen and (min-width: 581px) and (max-width: 768px) {
+@media screen and (min-width: 601px) and (max-width: 768px) {
 
 
 
